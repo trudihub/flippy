@@ -26,7 +26,7 @@ class WeatherData{
 
 async function getData(location){
     try{
-    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=8205d5b4151da5b3db6825ecab3aece7`,{mode: "cors"})
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&APPID=8205d5b4151da5b3db6825ecab3aece7`,{mode: "cors"})
     const json = await response.json();
     
     let currentlocation = new WeatherData (json.name, json.main.temp, json.weather[0].description, json.wind.speed, json.main.humidity,json.main.pressure);
