@@ -45,7 +45,7 @@ async function getJoke(){
     setup.innerHTML ="";
     punchline.innerHTML ="";
     try{
-        const response = await fetch("https://v2.jokeapi.dev/joke/Miscellaneous,Dark,Pun?lang=de&type=twopart")
+        const response = await fetch("https://v2.jokeapi.dev/joke/Miscellaneous,Dark,Pun?lang=de&type=twopart/")
         const json = await response.json();
         setup.innerHTML = json.setup;
         setTimeout(() => {
