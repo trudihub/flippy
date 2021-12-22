@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flippy</title>
+</head>
+<body>
+    <div class="bg-hero">
+        <h1 id="welcome">Hallo hübschi</h1>
+        <p id="subtitle">Falls du dich jemals alleine fühlst, soll diese Seite dir helfen dich mit mir und deinem Zuhause verbunden zu fühlen.</p>
+        
+    </div>
+    <div class="feature-grid">
+        <div class="grid-child">
+            <h2>Wie ist wohl das Wetter zuhause ?</h2>
+            <p id="weather-temp" class="main-info"></p>
+            <div class="weather-small"> 
+                <p id="weather-sky"></p>
+                <p id="weather-humid"></p>
+                <p id="weather-pressure"></p>
+            </div>
+
+        </div>
+        <div class="grid-child color-grid" id="time-grid">
+            <h2>Wie viel Uhr ist es zuhause ?</h2>
+            <p id="time-home" class="main-info"></p>
+        </div>
+        <div class="grid-child color-grid">
+            <h2>Zeit, bis du nach Hause kommst:</h2>
+            <p id="countdown" class="main-info"></p>
+            <div class="countdown-small">
+                <p>Tage</p>
+                <p>Stunden</p>
+                <p>Minuten</p>
+                <p>Sekunden</p>
+            </div>
+        </div>
+        <div class="grid-child">
+            <h2>Willst du einen Witz hören ?</h2>
+            <p>(Achtung: Manche sind wirklich extrem unlustig)</p>
+            <p id="setup"></p>
+            <p id="punchline"></p>
+            <button id="get-joke">Erzähl mir einen Witz</button>
+        </div>
+        
+    </div>
+    <div class="footer">
+        <h2>Doch egal wie viel Uhr und welches Wetter:</h2>
+        <h2>Ich liebe dich.</h2>
+        <p>Dein Gerri</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
